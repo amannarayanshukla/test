@@ -22,5 +22,11 @@ hashCandidate //  hashing the candidate key
 
 hashCandidateIfLimitExceeded // checking if hashing candidate key is required or not and if required calling the function to hash it
 
-The logic behind the break down is to limit the functionality to each function to do one thing at  a time. (single responsibility principle)
-With the above changes if we want to make the changes tomorrow to any particular logic we won't have to test all the function but only the changes to that particular function also the rest of the function wont be needed to touch (open-close principal)
+1.The logic behind the breakdown is to limit the functionality to each function to do one thing at  a time. (single responsibility principle).
+
+2.With the above changes if we want to make the changes tomorrow to any particular logic we won't have to test all the function but only the changes to that particular function also the rest of the function won't be needed to touch (open-close principal)
+
+3. The above changes will also help in reducing the cyclomatic complexity of the function.
+4. The above change will also help with writting easy to read unit test cases. 
+5. Will also increase reusability of the code. as we can already see the hash function is being used in two places.
+6. Will also help in reducing the number of lines of code.
